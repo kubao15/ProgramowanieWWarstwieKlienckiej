@@ -8,12 +8,16 @@
 </head>
 
 <style>
+    html {
+        scroll-behavior: smooth;
+    }
+
     .container {
         margin: 0 auto;
         max-width: 1280px;
     }
 
-    .main-menu {
+    .header {
         position:sticky;
         top: 0;
     }
@@ -21,13 +25,24 @@
     .main-menu-inner {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: space-around;
+        list-style-type: none;
     }
 
     .main-menu-a {
         color: #000;
         text-decoration: none;
         text-transform: uppercase;
+    }
+
+    .row {
+        min-height: 600px;
+    }
+
+    .row,
+    .container,
+    .main-menu {
+        border: 1px solid #000;
     }
 </style>
 
@@ -47,10 +62,10 @@
        </nav>
     </header>
     <!--sekcje do których będziemy się przenosić-->
-    <div>class="row abouts" id="abouts"></div>
-    <div>class="row offer" id="offer"></div>
-    <div>class="row services" id="services"></div>
-    <div>class="row contact" id="contact"></div>
+    <div class="row abouts" id="abouts"></div>
+    <div class="row offer" id="offer"></div>
+    <div class="row services" id="services"></div>
+    <div class="row contact" id="contact"></div>
     <footer class="footer"></footer>
     </div>
 </body>
