@@ -6,29 +6,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
-    
+
+<style>
+    .container {
+        margin: 0 auto;
+        max-width: 1280px;
+    }
+
+    .main-menu {
+        position:sticky;
+        top: 0;
+    }
+
+    .main-menu-inner {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .main-menu-a {
+        color: #000;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+</style>
+
+<body id ="home">
+    <div class="container">
+        <!-- Nagłówek z nawigacją -->
+    <header class="header">
+       <!-- nav.main-menu>ul.main-menu-inner>li.main-menu-item*5>a --> 
+       <nav class="main-menu">
+        <ul class="main-menu-inner">
+            <li class="main-menu-item"><a href="#home">Strona główna</a></li>
+            <li class="main-menu-item"><a href="#abouts">O nas</a></li>
+            <li class="main-menu-item"><a href="#offer">Oferta</a></li>
+            <li class="main-menu-item"><a href="#services">Usługi</a></li>
+            <li class="main-menu-item"><a href="#contact">Kontakt</a></li>
+        </ul>
+       </nav>
+    </header>
+    <!--sekcje do których będziemy się przenosić-->
+    <div>class="row abouts" id="abouts"></div>
+    <div>class="row offer" id="offer"></div>
+    <div>class="row services" id="services"></div>
+    <div>class="row contact" id="contact"></div>
+    <footer class="footer"></footer>
+    </div>
 </body>
 </html>
 
-<div class="container">
-    <!-- Nagłówek z nawigacją -->
-<header class="header">
-   <!-- nav.main-menu>ul.main-menu-inner>li.main-menu-item*5>a --> 
-   <nav class="main-menu">
-    <ul class="main-menu-inner">
-        <li class="main-menu-item"><a href="#home"></a></li>
-        <li class="main-menu-item"><a href="#abouts"></a></li>
-        <li class="main-menu-item"><a href="#offer"></a></li>
-        <li class="main-menu-item"><a href="#services"></a></li>
-        <li class="main-menu-item"><a href="#contact"></a></li>
-    </ul>
-   </nav>
-</header>
-<!--sekcje do których będziemy się przenosić-->
-<div>class="row aobuts" id="abouts"></div>
-<div>class="row offer" id="offer"></div>
-<div>class="row services" id="services"></div>
-<div>class="row contact" id="contact"></div>
-<footer class="footer"></footer>
-</div>
