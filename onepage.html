@@ -29,7 +29,7 @@
         list-style-type: none;
     }
 
-    .main-menu-a {
+    .main-menu a {
         color: #000;
         text-decoration: none;
         text-transform: uppercase;
@@ -44,12 +44,20 @@
     .main-menu {
         border: 1px solid #000;
     }
+
+    .main-menu {
+        height: 50px;
+    }
+
+    .sticky {
+        height: 80px;
+    }
 </style>
 
 <body id ="home">
     <div class="container">
         <!-- Nagłówek z nawigacją -->
-    <header class="header">
+    <header class="header" id="naglowek">
        <!-- nav.main-menu>ul.main-menu-inner>li.main-menu-item*5>a --> 
        <nav class="main-menu">
         <ul class="main-menu-inner">
@@ -68,6 +76,23 @@
     <div class="row contact" id="contact"></div>
     <footer class="footer"></footer>
     </div>
+
+<script>
+    window.onscroll = function() {myFunction()}
+
+    let header = document.getElementById("naglowek")
+    let sticky = header.offsetTop
+
+    function myFunction(){
+        if (window.pageYOffset > sticky) {
+            header.classList.add("sticky")
+        }
+        else
+            header.classList.remove("sticky")
+    }
+</script>
+
+
 </body>
 </html>
 
