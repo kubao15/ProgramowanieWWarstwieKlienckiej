@@ -1,0 +1,247 @@
+@charset "UTF-8";
+@import 'https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap';
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column-reverse;
+  }
+  .description,
+  .car-img {
+    width: 100%;
+  }
+  html {
+    font-size: 80%;
+  }
+  .car-img {
+    top: 50px;
+    left: 30px;
+  }
+}
+@media (max-width: 480px) {
+  html {
+    font-size: 70%;
+  }
+}
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+table,
+th,
+td {
+  border: 1px solid #000;
+  border-collapse: collapse;
+}
+
+body {
+  font-family: MedievalSharp;
+}
+
+.container {
+  max-width: 1280px;
+  min-height: 350px;
+  margin: 0 auto;
+  border: 1px solid #000;
+  padding-bottom: 1%;
+}
+
+.logo img {
+  width: 200px;
+}
+
+.main-menu-inner {
+  display: flex;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+}
+
+.main-menu .main-menu-item a {
+  color: #000;
+  text-decoration: none;
+  padding: 10px;
+  font-size: 18px;
+}
+
+.kwadrat1 {
+  width: 100px;
+  height: 100px;
+  padding-top: 5px;
+  padding-right: 17px;
+  padding-bottom: 20px;
+  padding-left: 3px;
+  background: red;
+}
+
+.content {
+  display: flex;
+}
+
+.main-menu .main-menu-item::after,
+.main-menu .main-menu-inner:first-child::before {
+  content: "|";
+}
+
+.description h1 span {
+  width: 40%;
+  display: flex;
+  padding: 0px 10px;
+  background-color: yellow;
+}
+
+.car-img img {
+  max-width: 100%;
+  height: auto;
+}
+
+.btn1 {
+  background: yellow;
+  width: 50px;
+  height: 50px;
+  border: 0;
+  padding: 15px 25px;
+  border-radius: 25px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 1s linear;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn1:hover {
+  background: yellowgreen;
+  transition: all 1s linear;
+}
+
+.i1 {
+  background-image: url(../stronka/1.png);
+  width: 100px;
+  height: 50px;
+  background-size: 100%;
+}
+
+/* scss */
+nav ul li {
+  color: red;
+}
+nav ul li a {
+  color: red;
+}
+
+.circle1 {
+  width: 50px;
+  height: 50px;
+  border-radius: 30px;
+  background-color: blue;
+  border: 5px solid #000;
+}
+
+html {
+  font-size: 100%;
+}
+
+p {
+  font-weight: 300;
+  font-size: 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+h1 {
+  /* font-size: 60px; */
+  font-size: 3.5rem;
+}
+
+h2 {
+  /* font-size: 55px; */
+  font-size: 3rem;
+}
+
+h3 {
+  /* font-size: 45px; */
+  font-size: 2.5rem;
+}
+
+h4 {
+  /* font-size: 35px; */
+  font-size: 2rem;
+}
+
+h5 {
+  /* font-size: 30px; */
+  font-size: 1.5rem;
+}
+
+/*Deklaracja zmiennych CSS */
+:root {
+  --btn-color: #b31515;
+}
+
+/*Zywołanie zmiennych CSS */
+.klasa1 {
+  --grey: #cbcbcb;
+  width: 50px;
+  height: 50px;
+  background: var(--grey);
+}/*# sourceMappingURL=style.css.map */

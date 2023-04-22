@@ -1,0 +1,117 @@
+<head>
+    <body>
+        <style>
+            .container {
+                max-width: 1280px;
+                margin: 0 auto;
+                border: 1px;
+            }
+            .box1,
+            .box2 {
+                border: 1px solid #000;
+                width: 50%;
+                height: 50%;
+            }
+            .column .box {
+                width: 100%;
+            }
+            .row .box {
+                width: 50%;
+            }
+            .column {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                
+            }
+            .row {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+            }
+            html {
+                font-size: 16px;
+            }
+            .znacznik1 {
+                font-size: 2em;
+            }
+            
+            .prostakat1 {
+                width: 400px;
+                height: 500px;
+                background: red;
+                position: relative;
+                top: 20px;
+                left: 40px;
+            }
+
+            .prostakat2 {
+                width: 300px;
+                height: 200px;
+                background: blue;
+                position: relative;
+                left: 40px;
+                right: 30px;
+            }
+
+            .dot1 {
+                height: 100px;
+                width: 100px;
+                background: red;
+                border-radius: 50px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .dot2 {
+                height: 50px;
+                width: 50px;
+                background: green;
+                border-radius: 50%;
+                position: relative;
+                
+            }
+
+            @media (max-width: 769px) {
+                .mobile.row {
+                    flex-direction: row;
+                }
+                .mobile.column {
+                    flex-direction: column;
+                }
+                .column .box {
+                    width: 50%;
+                }
+                .row .box {
+                    width: 100;
+                }
+            }
+        </style>
+        <div class="prostakat1 wrapper">
+            <div class="prostakat2"></div>
+        </div>
+
+        <div class="dot1">
+            <div class="dot2"></div>
+        </div>
+
+        <div class="em1">
+            <div class="em">Jakub Stankiewicz</div>
+        </div>
+        <div class="rem">Jakub Bielafski</div>
+        <div class="znacznik1">
+            <div class="dziecko40px">Tekst 40px</div>
+        </div>
+        <div class="wesoly">Mój rodzic to 16px</div>
+        <div class="container">
+        <div class="column mobile row">
+            <div class="box1">1</div>
+            <div class="box1">2</div>
+        </div>
+        <div class="row mobile column">
+            <div class="box1">1</div>
+            <div class="box1">2</div>
+        </div>
+    </body>
+</head>

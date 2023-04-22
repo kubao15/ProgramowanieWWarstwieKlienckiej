@@ -1,0 +1,38 @@
+@media (min-width: 320px) {
+
+}
+@media (min-width: 480px){
+
+}
+@media (min-width: 768px){
+
+}
+@media (min-width: 992px){
+
+}
+@media (max-width: 1200px){
+
+}
+
+@media (max-width: 768px){
+    .content {
+        flex-direction: column-reverse;
+    }
+    .description,
+    .car-img {
+        width: 100%;
+    }
+    html {
+        font-size: 80%;
+    }
+    .car-img {
+        top: 50px;
+        left: 30px;
+    }
+}
+
+@media (max-width: 480px){
+    html {
+        font-size: 70%;
+    }
+}
